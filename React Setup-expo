@@ -1,0 +1,28 @@
+ first, make sure you have curl installed:
+ 
+ sudo apt install curl
+
+Then download and execute the Node.js 10.x installer:
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
+Once the installer is done doing it’s thing, you will need to install (or upgrade) Node.js:
+
+sudo apt install nodejs
+
+Install Expo- by Using this command:
+
+npm install expo-cli --global
+
+Watcher is must If u want to Modify or config file
+If you are running Debian, RedHat, or another similar Linux distribution, run the following in a terminal:
+
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+Create your first project
+
+You will be asked to create an Expo account before proceeding.
+
+expo init my-new-project
+cd my-new-project
+npm or expo start
